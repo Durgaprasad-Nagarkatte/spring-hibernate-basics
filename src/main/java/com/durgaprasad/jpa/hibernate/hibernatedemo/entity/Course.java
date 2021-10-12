@@ -17,7 +17,7 @@ public class Course {
     @GeneratedValue
     private Long id;
 
-    @Column(nullable = true)
+    @Column(nullable = false)
     private String name;
 
     @UpdateTimestamp
