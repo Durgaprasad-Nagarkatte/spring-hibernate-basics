@@ -15,6 +15,9 @@ public class Review {
 
     private String description;
 
+    @ManyToOne
+    private Course course;
+
     public Review(){}
 
     public Review(int rating, String description) {
@@ -36,6 +39,18 @@ public class Review {
 
     public void setRating(int rating) {
         this.rating = rating;
+    }
+
+    public void setId(long id) {
+        this.id = id;
+    }
+
+    public Course getCourse() {
+        return course;
+    }
+
+    public void setCourse(Course course) {
+        this.course = course;
     }
 
     public void setDescription(String description) {

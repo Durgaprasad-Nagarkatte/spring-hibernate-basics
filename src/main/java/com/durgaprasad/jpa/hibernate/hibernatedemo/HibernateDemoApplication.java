@@ -29,18 +29,18 @@ public class HibernateDemoApplication implements CommandLineRunner {
 	@Override
 	public void run(String... args) throws Exception {
 		// find by id
-		Course course = courseRepository.findById(10001L);
-		logger.info("The course is : {}", course);
-
-		// delete by id
-		courseRepository.deleteById(10003L);
-
-		// save by id
-		course = new Course("Functional Programming");
-		courseRepository.save(course);
-
-		courseRepository.playWithEntityManager();
-
-		studentRepository.saveWithPassport();
+//		Course course = courseRepository.findById(10001L);
+//		logger.info("The course is : {}", course);
+//
+//		// delete by id
+//		courseRepository.deleteById(10003L);
+//
+//		// save by id
+//		course = new Course("Functional Programming");
+//		courseRepository.save(course);
+//
+//		courseRepository.playWithEntityManager();
+//
+//		studentRepository.saveWithPassport();
 	}
 }
